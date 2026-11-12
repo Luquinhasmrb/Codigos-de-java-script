@@ -1,1 +1,23 @@
-matrix
+7.
+
+let num = [[2, 3, 5], [9, 8, 7], [2, 9, 4]];
+let maior = [0][0]
+for(let i = 0; i < num.length; i++){
+  for(let j = 0; j < num[i].length; j++){
+    if(num[i][j] > maior){
+      maior = num[i][j]
+    } 
+  }
+}
+console.log(maior)
+
+8.
+
+let num = [[2, 3, 5], [9, 8, 7], [2, 9, 4]];
+for(let i = 0; i < num.length; i++){
+  let soma = 0
+  for(let j = 0; j < num[i].length; j++){
+      soma += num[i][j]
+  }
+      console.log(soma)
+}
