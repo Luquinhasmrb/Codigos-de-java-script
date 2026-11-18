@@ -1,3 +1,99 @@
+1.
+
+let numeros = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for(let i = 0; i < numeros.length; i++){
+    let linha = "";
+    for(let j = 0; j < numeros[i].length; j++){
+        linha += numeros[i][j] + " ";
+    }
+    console.log(linha);
+}
+
+2.
+
+let num = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+alert(num[0][1]);
+alert(num[2][2]);
+
+3.
+
+let num = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+num[1][0] = 100;
+
+for(let i = 0; i < num.length; i++){
+    alert(num[i]);
+}
+
+4.
+
+let num = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+for(let i = 0; i < num.length; i++){
+    for(let j = 0; j < num[i].length; j++){
+        alert(num[i][j]);
+    }
+}
+
+5.
+
+let num = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+let soma = 0;
+
+for(let i = 0; i < num.length; i++){
+    for(let j = 0; j < num[i].length; j++){
+        soma += num[i][j];
+    }
+}
+
+alert(soma);
+
+6.
+
+let num = [
+    [2, 3, 4],
+    [6, 7, 8],
+    [9, 10, 12],
+    [14, 15, 16]
+];
+
+let pares = 0;
+
+for(let i = 0; i < num.length; i++){
+    for(let j = 0; j < num[i].length; j++){
+        if(num[i][j] % 2 == 0){
+            pares++;
+        }
+    }
+}
+
+alert(pares);
+
+
+
 7.
 
 let num = [[2, 3, 5], [9, 8, 7], [2, 9, 4]];
