@@ -96,7 +96,11 @@ alert(pares);
 
 7.
 
-let num = [[2, 3, 5], [9, 8, 7], [2, 9, 4]];
+let num = [
+    [2, 3, 5], 
+    [9, 8, 7], 
+    [2, 9, 4]
+];
 let maior = [0][0]
 for(let i = 0; i < num.length; i++){
   for(let j = 0; j < num[i].length; j++){
@@ -109,7 +113,11 @@ console.log(maior)
 
 8.
 
-let num = [[2, 3, 5], [9, 8, 7], [2, 9, 4]];
+let num = [
+    [2, 3, 5],
+    [9, 8, 7],
+    [2, 9, 4]
+];
 for(let i = 0; i < num.length; i++){
   let soma = 0
   for(let j = 0; j < num[i].length; j++){
@@ -169,6 +177,63 @@ for(let i = 0; i < numeros1.length; i++){
   let soma = []
   for(let j = 0; j < numeros1[i].length; j++){
     soma.push(numeros1[i][j] + numeros2[i][j])
+  }
+  console.log(soma)
+}
+
+12.
+
+let numeros1 = [
+    [5, 7],
+    [2, 5],
+    [2, 5]
+];
+let numeros2 = [
+    [5, 7],
+    [2, 5],
+    [2, 5]
+];
+
+for(let i = 0; i < numeros1.length; i++){
+  let subt = []
+  for(let j = 0; j < numeros1[i].length; j++){
+    subt.push(numeros1[i][j] - numeros2[i][j])
+  }
+  console.log(subt)
+}
+
+13.
+
+let numeros1 = [
+    [5, 7, 5],
+    [2, 5, 6]
+];
+let numeros2 = [
+    [5, 7, 5],
+    [2, 5, 6]
+];
+
+for(let i = 0; i < numeros1.length; i++){
+  let result = []
+  for(let j = 0; j < numeros1[i].length; j++){
+    result.push(numeros1[i][j] * 3)
+  }
+  console.log(result)
+}
+
+14.
+
+let numeros = [
+    ["Gilberto", 10, 15, 20, 8],
+    ["Erivan", 20, 10, 5, 2],
+    ["João", 30, 50, 10, 5]
+];
+
+
+for(let i = 0; i < numeros.length; i++){
+  let soma = 0
+  for(let j = 1; j < numeros[i].length; j++){
+    soma += numeros[i][j]
   }
   console.log(soma)
 }
